@@ -26,7 +26,7 @@ public class Main {
             if(raggio < 1 || altezza < 1){
                 System.out.println("\nIl raggio e l'altezza devono essere maggiore di 1.");
             }
-        }while(raggio > 0 && checkRaggio && checkAltezza);
+        }while(raggio < 0 || altezza < 0 || !checkRaggio || !checkAltezza);
 
         Tubo tubo = new Tubo(raggio, altezza);
 
