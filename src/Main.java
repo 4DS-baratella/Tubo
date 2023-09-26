@@ -28,7 +28,7 @@ public class Main {
             }
         }while(raggio > 0 && checkRaggio && checkAltezza);
 
-
+        Tubo tubo = new Tubo(raggio, altezza);
 
         do{
             do{
