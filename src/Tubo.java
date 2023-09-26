@@ -1,12 +1,12 @@
 public class Tubo {
-    private float superficie, volume;
+    private double superficie, volume;
 
     public Tubo(float raggio){
         this.superficie = calcoloSuperficie(raggio);
         this.volume = calcoloVolume(raggio);
     }
 
-    public float calcoloSuperficie(float raggio){
-
+    public double calcoloSuperficie(float raggio){
+        return 2 * (3.14) * raggio;
     }
 }
