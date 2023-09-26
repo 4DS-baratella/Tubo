@@ -54,6 +54,10 @@ public class Main {
                     System.out.println("\nLa superficie del tubo è: " + tubo.getSuperficie());
                     break;
 
+                case 2:
+                    System.out.println("\nIl volume del tubo è: " + tubo.getVolume());
+                    break;
+
                 default:
                     System.out.println("\nLa scelta fatta non corrisponde a nessuna opzione del menu.");
                     break;
