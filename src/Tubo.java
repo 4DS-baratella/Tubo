@@ -19,15 +19,7 @@ public class Tubo {
         return superficie;
     }
 
-    public void setSuperficie(double superficie) {
-        this.superficie = superficie;
-    }
-
     public double getVolume() {
         return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
     }
 }
