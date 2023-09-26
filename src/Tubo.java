@@ -22,4 +22,12 @@ public class Tubo {
     public double getVolume() {
         return volume;
     }
+
+    @Override
+    public String toString() {
+        return "Tubo {" +
+                "superficie=" + superficie +
+                ", volume=" + volume +
+                '}';
+    }
 }
