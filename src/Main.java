@@ -45,6 +45,15 @@ public class Main {
                     System.out.println("\nLa scelta deve essere un numero intero.");
                 }
             }while(!checkScelta);
+
+            switch (scelta){
+                case 0:
+                    break;
+
+                default:
+                    System.out.println("\nLa scelta fatta non corrisponde a nessuna opzione del menu.");
+                    break;
+            }
         }while(scelta != 0);
     }
 }
