@@ -4,23 +4,29 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int scelta = -1;
-        boolean checkScelta, checkRaggio;
-        float raggio = 0;
+        boolean checkScelta, checkRaggio, checkAltezza;
+        float raggio = 0, altezza = 0;
 
         do{
             checkRaggio = false;
+            checkAltezza = false;
             try{
                 System.out.println("\nInserire il raggio del tubo: ");
                 input = new Scanner(System.in);
                 raggio = input.nextFloat();
                 checkRaggio = true;
+
+                System.out.println("\nInserire l'altezza del tubo: ");
+                input = new Scanner(System.in);
+                altezza = input.nextFloat();
+                checkAltezza = true;
             }catch (InputMismatchException e){
-                System.out.println("\nIl raggio deve essere un numero.");
+                System.out.println("\nIl raggio e l'altezza devono essere un numero.");
             }
-            if(raggio < 1){
-                System.out.println("\nIl raggio deve essere maggiore di 1.");
+            if(raggio < 1 || altezza < 1){
+                System.out.println("\nIl raggio e l'altezza devono essere maggiore di 1.");
             }
-        }while(raggio > 0 && checkRaggio);
+        }while(raggio > 0 && checkRaggio && checkAltezza);
 
 
 
