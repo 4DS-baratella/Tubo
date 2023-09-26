@@ -11,6 +11,6 @@ public class Tubo {
     }
 
     public double calcoloVolume(float raggio, float altezza){
-
+        return (3.14) * pwr(raggio, 2) * altezza;
     }
 }
