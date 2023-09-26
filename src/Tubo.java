@@ -14,4 +14,20 @@ public class Tubo {
     public double calcoloVolume(float raggio, float altezza){
         return (3.14) * Math.pow(raggio, 2) * altezza;
     }
+
+    public double getSuperficie() {
+        return superficie;
+    }
+
+    public void setSuperficie(double superficie) {
+        this.superficie = superficie;
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
 }
