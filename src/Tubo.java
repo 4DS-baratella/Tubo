@@ -1,6 +1,7 @@
 public class Tubo {
     private double superficie, volume;
 
+
     public Tubo(float raggio, float altezza){
         this.superficie = calcoloSuperficie(raggio);
         this.volume = calcoloVolume(raggio, altezza);
@@ -11,6 +12,6 @@ public class Tubo {
     }
 
     public double calcoloVolume(float raggio, float altezza){
-        return (3.14) * pwr(raggio, 2) * altezza;
+        return (3.14) * Math.pow(raggio, 2) * altezza;
     }
 }
