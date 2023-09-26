@@ -8,19 +8,21 @@ public class Main {
         float raggio = 0;
 
         do{
-            checkScelta = false;
+            checkRaggio = false;
             try{
                 System.out.println("\nInserire il raggio del tubo: ");
                 input = new Scanner(System.in);
                 raggio = input.nextFloat();
-                checkScelta = true;
+                checkRaggio = true;
             }catch (InputMismatchException e){
                 System.out.println("\nIl raggio deve essere un numero.");
             }
             if(raggio < 1){
                 System.out.println("\nIl raggio deve essere maggiore di 1.");
             }
-        }while(raggio > 0 && checkScelta);
+        }while(raggio > 0 && checkRaggio);
+
+
 
         do{
             do{
